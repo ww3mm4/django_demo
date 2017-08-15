@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>桌面图片</title>
+    </head>
+
+    <body>
+        <ul>
+        {% for images in data %}
+            <li><h3><a href="/zhuomian/getImage?title={{images.title}}">{{images.title}} [{{images.count}}p]</a></h3></li>
+        {% endfor %}
+        </ul>
+        <ul>
+            {%if lastPage%}
+                <li style="float:left;"><h3><a href="/zhuomian/index/{{lastPage}}">上一页</a></h3></li>
+            {% endif %}
+            {% if nextPage %}
+                <li style="float:left;margin-left:280px;"><h3><a  href="/zhuomian/index/{{nextPage}}">下一页</a></h3></li>
+            {% endif %}
+        </ul>
+    </body>
+</html>

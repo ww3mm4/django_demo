@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+
+    <body>
+        <ul>
+        {% for img in data %}
+            <li><img style="display:block;width:100%;" src="{{ img.img_url }}"  alt="{{img.title}}"/></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
