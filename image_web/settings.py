@@ -25,7 +25,7 @@ SECRET_KEY = 'wzy8!f#okgd5lnur4cb&yth$9^t1$+h&*g=^ree8t0oe!cj8_!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'image_web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'image',
+        'NAME': 'zhuomian',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': 'ww333mm444',
         'HOST': 'localhost',
         'PORT': '3306',
     }
